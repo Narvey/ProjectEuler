@@ -8,6 +8,7 @@ import javax.swing.JFrame;
 import javax.swing.JTextField;
 
 import problems.Prob2;
+import problems.Prob3;
 
 public class Win extends JFrame {
 	private static Win instance = null; 
@@ -21,6 +22,9 @@ public class Win extends JFrame {
 		JButton prob2 = new JButton((Action) new MyAction(new Prob2()));
 		prob2.setText("Problem 2");
 		add(prob2);
+		JButton prob3 = new JButton((Action) new MyAction(new Prob3()));
+		prob3.setText("Problem 3");
+		add(prob3);
 		result = new JTextField();
 		add(result);
 		setVisible(true);

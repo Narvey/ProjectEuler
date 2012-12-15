@@ -2,6 +2,11 @@ package problems;
 
 import gui.Win;
 
+/**
+ * Fibonachi
+ * @author Nathan
+ *
+ */
 public class Prob2 implements Runnable {
 		@Override
 		public void run() {
