@@ -7,6 +7,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JTextField;
 
+import problems.Prob1;
 import problems.Prob2;
 import problems.Prob3;
 
@@ -19,6 +20,9 @@ public class Win extends JFrame {
 		this.setLayout(new FlowLayout());
 		this.setSize(200, 200);
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+		JButton prob1 = new JButton((Action) new MyAction(new Prob1()));
+		prob1.setText("Problem 1");
+		add(prob1);
 		JButton prob2 = new JButton((Action) new MyAction(new Prob2()));
 		prob2.setText("Problem 2");
 		add(prob2);
